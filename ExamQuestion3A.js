@@ -198,4 +198,6 @@ exports.update =  function (cb)
 // Question 6 ----- Explain, using a relevant example, a full MEAN application (the A, can be an ionic
 // application)
 
+// kør routes.js for at starte serveren og derefter højre klik og tryk kør på index.html
+// api pathsne er /create, /get, /delete, /update, og står under routes.js
 
