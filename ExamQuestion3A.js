@@ -128,6 +128,9 @@ exports.insert =  function (cb)
     var user1 = {name: 'modulus admin', age: 42, roles: ['admin', 'moderator', 'user']};
     var user2 = {name: 'modulus user', age: 22, roles: ['user']};
     var user3 = {name: 'modulus super admin', age: 92, roles: ['super-admin', 'admin', 'moderator', 'user']};
+
+    userss.ensureIndex( { "age": 22 }, { expireAfterSeconds: 5 } )
+
 userss.insertMany([user1, user2, user3], function (err, result) {
     if (err) {
         console.log(err);
